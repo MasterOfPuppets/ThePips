@@ -1,0 +1,229 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111111"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+    
+   <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="8dp"
+	    android:padding="8dp"
+	    android:background="@drawable/border" >
+       
+	<TextView android:id="@+id/tickStatusText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#FFFEE0"
+	/>
+	
+	<TextView
+	    android:id="@+id/phonesStatusText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:textColor="#FFFEE0" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="8dp"
+	    android:layout_marginBottom="8dp"
+	    android:background="@drawable/border" >
+	    
+		<ToggleButton
+		    android:id="@+id/pipsOnOff"
+		    style="@style/button_text"
+		    android:layout_weight="0.5"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="0dp"
+		    android:background="@drawable/toggle_selector"
+		    android:textOn="@string/pipsOn"
+		    android:textOff="@string/pipsOff"
+		    android:onClick="onPipsToggleClicked"
+			 />
+		<Button
+            android:id="@+id/aboutButton"
+            style="@style/button_text"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:text="@string/aboutButton" />
+</LinearLayout>
+
+<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="8dp"
+	    android:orientation="vertical"
+	    android:padding="8dp"
+	    android:background="@drawable/border" >
+    
+	<TextView android:id="@+id/tickFreqText"
+	    android:text="@string/tickFreqText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    tools:context=".ThePips"
+	    android:textColor="#FFFEE0"
+	/>	
+	<RadioGroup 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:textColor="#FFFEE0">
+	    <RadioButton android:id="@+id/hourly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/hourly"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>
+	    <RadioButton android:id="@+id/halfHourly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/halfHourly"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>
+	    <RadioButton android:id="@+id/quarterHourly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/quarterHourly"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>	    
+	</RadioGroup>
+</LinearLayout>
+<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="8dp"
+	    android:orientation="vertical"
+	    android:padding="8dp"
+	    android:background="@drawable/border" >
+	
+	<TextView android:id="@+id/tickModeText"
+	    android:text="@string/tickModeText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    tools:context=".ThePips"
+	    android:textColor="#FFFEE0"
+	/>	
+	<RadioGroup 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:textColor="#FFFEE0">
+	    <RadioButton android:id="@+id/modePhonesOnly"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/modePhonesOnly"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>
+	    <RadioButton android:id="@+id/modeAlways"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/modeAlways"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>	    
+	</RadioGroup>
+</LinearLayout>
+<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="8dp"
+	    android:orientation="vertical"
+	    android:padding="8dp"
+	    android:background="@drawable/border" >
+
+	<TextView android:id="@+id/pipMode"
+	    android:text="@string/pipModeText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    tools:context=".ThePips"
+	    android:textColor="#FFFEE0"
+	/>
+	<RadioGroup 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:textColor="#FFFEE0">	    
+	    <RadioButton android:id="@+id/rbPipOn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/rbPipModeOn"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>
+
+	    <RadioButton android:id="@+id/rbPipOff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/rbPipModeOff"
+	        android:onClick="radioButtonClick"
+	        android:textColor="#FFFEE0"/>
+	</RadioGroup>
+	<View
+			 android:layout_width="match_parent"
+			 android:layout_height="1dp"
+			 android:background="@android:color/darker_gray"
+	 />
+		    <CheckBox 
+	        android:id ="@+id/cbDifferentiate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cbDifferentiate"
+	        android:onClick="cbDifferentiateClick"
+	        />
+	
+</LinearLayout>
+
+<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="8dp"
+	    android:orientation="vertical"
+	    android:padding="8dp"
+	    android:background="@drawable/border" >
+		<LinearLayout
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" >	
+			<TextView android:id="@+id/soundText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#FFFEE0"
+			/>
+		</LinearLayout>
+		<LinearLayout
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >	    
+			<Button android:id="@+id/soundChooseButton"
+			      android:layout_height="wrap_content"
+			      android:layout_weight="0.5" 
+			      android:background="@drawable/button"
+			      style="@style/button_text"	    
+			      android:text="@string/button_sound_choose"
+			      android:clickable="true"
+			/>
+			<Button android:id="@+id/earThePips"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.5"
+		            android:background="@drawable/button"
+		            style="@style/button_text"
+		            android:text="@string/earThePips"
+		            android:clickable="true" 
+		     />
+		</LinearLayout>	
+	</LinearLayout>
+</LinearLayout>
+</ScrollView><!-- From: file:/home/paulo/AndroidstudioProjects/ThePipsApp/app/src/main/res/layout/main.xml -->

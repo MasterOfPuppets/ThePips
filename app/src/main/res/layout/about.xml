@@ -1,0 +1,41 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"     
+    >
+<!-- 
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"         
+        >
+    </TextView>
+ -->
+		<WebView
+		    android:id="@+id/webView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />
+ 
+		<Button
+		    android:id="@+id/buttonClose"
+		    style="@style/button_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/button"
+		    android:layout_gravity="center_horizontal"
+		    android:paddingBottom="16dp"
+		    android:clickable="true"
+		    android:text="@string/buttonClose" />    
+</LinearLayout>
+
+</ScrollView>

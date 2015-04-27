@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Pips</string>    
+    <string name="title_activity_display_message">The Pips, your tell-time while on the move</string>
+    <string name="hourly">Every hour</string>
+    <string name="halfHourly">Every half-hour</string>
+    <string name="quarterHourly">Every fifteen minutes</string>
+    <string name="aboutButton">About</string>
+    <string name="buttonClose">Close</string>    
+    <string name="button_cancel">Stop pips and exit</string>
+    <string name="button_sound_choose">Choose sound</string>
+    <string name="phoneLabel">Headphones :</string>
+    <string name="tickFreqText">Set your desired pip frequency:</string>
+    <string name="tickModeText">Set your desired pip mode:</string>
+    <string name="modePhonesOnly">Only with phones plugged in</string>
+    <string name="modeAlways">Always (everyone will hear!)</string>
+    <string name="rbPipModeOn">Play pips</string>
+    <string name="rbPipModeOff">Play notification sounds</string>
+    <string name="pipModeText">Choose pips or notifications:</string>
+    <string name="earThePips">Hear "The Pips"</string>
+    <string name="pipsOnOff">Pips state</string>
+    <string name="pipsOn">Pips are on</string>
+    <string name="pipsOff">Pips are off</string>
+    <string name="cbDifferentiate">Differentiate quarter and half-hour</string>
+
+    <!-- In app strings -->
+	<string name = "headphonesIn">Your headphones are plugged in</string>
+	<string name = "headphonesOut">Your headphones are unplugged</string>
+    <string name = "titleModalSelectTone">Select Tone</string>
+    <string name = "actualSoundLbl">Actual sound</string>
+    <string name = "newNotificationSound">New notification sound:</string>
+
+    <!--  toasts -->
+    <string name = "toastThePipsAreRunning">The Pips are running</string>
+    <string name = "toastThePipsWereStopped">The Pips were stopped</string>
+    <string name = "toastFrequencySet">New pips frequency set</string>
+    <string name = "toastOnWithHeadphones">Pips when headphones are plugged in</string>
+    <string name = "toastAlwaysPip">Always pip</string>
+    <string name = "toastPipSoundActive">Pips sound active</string>
+    <string name = "toastNotificationSoundActive">Notification sound active</string>
+    <string name = "toastSettingsSaved">Settings saved</string>
+
+
+    
+
+</resources>
