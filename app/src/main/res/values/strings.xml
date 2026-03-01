@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">The Pips</string>
+    <!-- Quick Settings Tile -->
+    <string name="tile_label_default">The Pips</string>
+    <string name="tile_label_on">Pips ON</string>
+    <string name="tile_label_off">Pips OFF</string>
+
+    <!-- Navigation -->
+    <string name="title_dashboard">Schedule</string>
+    <string name="title_library">Pip Library</string>
+    <string name="title_info">Pip Info</string>
+
+    <!-- Library Screen -->
+    <string name="empty_library_message">Empty library.</string>
+    <string name="fab_add_pip_content_description">New Pip</string>
+    <string name="dialog_title_delete_pip">Delete Pip</string>
+
+    <!-- Pip List Item -->
+    <string name="pip_item_volume_label">Volume: %1$d%%</string>
+    <string name="action_delete_pip_content_description">Delete Pip</string>
+    <string name="dialog_msg_delete_pip">Are you sure you want to delete \'%1$s\'? This action cannot be undone.</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Editor Screen -->
+    <string name="title_edit_pip">Edit Pip</string>
+    <string name="title_new_pip">New Pip</string>
+    <string name="label_pip_name">Pip Name</string>
+    <string name="hint_pip_name">e.g., Main Time Signal</string>
+    <string name="label_global_volume">Global Volume</string>
+    <string name="label_slot_frequency">Slot %1$d Frequency (Hz)</string>
+    <string name="action_save">Save</string>
+    <string name="label_slot_duration">Slot %1$d Duration (ms)</string>
+    <string name="label_frequency_value">%1$d Hz</string>
+    <string name="label_duration_value">%1$d ms</string>
+    <string name="label_silence">Silence</string>
+    <string name="label_pip_active">Active</string>
+
+    <string name="dialog_title_unsaved_changes">Unsaved changes</string>
+    <string name="dialog_msg_exit">You have unsaved changes. Are you sure you want to exit without saving?</string>
+    <string name="action_confirm_exit">Exit</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="dialog_title_reset">Reset to defaults</string>
+    <string name="dialog_msg_reset">This will clear all current settings. Are you sure?</string>
+    <string name="action_presets">Presets</string>
+    <string name="dialog_title_preset">Apply Preset</string>
+    <string name="dialog_msg_preset">This will overwrite current frequencies and durations with the selected preset. Are you sure?</string>
+
+    <!-- Editor Command Bar -->
+    <string name="action_test">Test</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Slot Editor -->
+    <string name="label_slot_title">Slot %1$d</string>
+    <string name="format_slot_summary">%1$s | %2$s</string>
+    <string name="dialog_title_edit_frequency">Edit Frequency</string>
+    <string name="dialog_title_edit_duration">Edit Duration</string>
+    <string name="hint_enter_value">Enter value</string>
+
+
+    <!-- Dashboard Screen -->
+    <string name="empty_dashboard_message">No active schedules.</string>
+    <string name="fab_add_schedule_content_description">New Schedule</string>
+    <string name="action_delete_schedule_content_description">Delete Schedule</string>
+
+    <string name="schedule_days_everyday">Every day</string>
+    <string name="schedule_days_weekdays">Weekdays</string>
+    <string name="schedule_days_weekends">Weekends</string>
+    <string name="schedule_hours_format">%1$02d:00 to %2$02d:00</string>
+    <string name="schedule_minutes_format">Mins: %1$s</string>
+    <string name="dialog_title_delete_schedule">Delete Schedule</string>
+    <string name="dialog_msg_delete_schedule">Are you sure you want to delete this schedule for \'%1$s\'? This action cannot be undone.</string>
+
+    <!-- Schedule Editor Screen -->
+    <string name="title_new_schedule">New Schedule</string>
+    <string name="title_edit_schedule">Edit Schedule</string>
+    <string name="label_select_pip">Select Pip</string>
+    <string name="label_days_of_week">Active Days</string>
+    <string name="label_active_hours">Active Hours</string>
+    <string name="label_start">Start</string>
+    <string name="label_end">End</string>
+    <string name="label_minutes">Active Minutes</string>
+    <string name="error_no_pip_selected">Please select a Pip.</string>
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+    <string name="action_all_day">All day</string>
+    <string name="preset_top_hour">Top Hour</string>
+    <string name="preset_half_hours">Half Hours</string>
+    <string name="preset_quarters">Quarters</string>
+    <string name="action_add_minute">Add</string>
+    <string name="error_no_minutes_selected">Select at least one minute</string>
+    <string name="empty_dashboard_no_pips_message">Your Pip Library is empty.\nPlease create a Pip first.</string>
+
+    <!-- Info Screen -->
+    <string name="info_title_history">History of the Pips</string>
+    <string name="info_text_history">The \"pips\" are a series of short audio tones broadcast by radio stations to mark the precise start of an hour. The most famous is the Greenwich Time Signal (GTS), first broadcast by the BBC in 1924. They were originally created to allow the public and ship navigators to calibrate their clocks and chronometers accurately.</string>
+
+    <string name="info_title_technical">Technical Motivations</string>
+    <string name="info_text_technical">Before digital networks, transmitting exact time over long distances was challenging. Radio provided a near-instantaneous medium. The classic BBC signal consists of five short 1kHz tones (0.1 seconds long) followed by a final, longer tone (0.5 seconds). The actual start of the exact hour coincides with the very beginning of that final, long pip.</string>
+
+    <string name="info_title_composition">How to compose Pips</string>
+    <string name="info_text_composition">This application allows you to recreate classic time signals or invent your own.\n\n• Each Pip has 8 available slots.\n• Set a Frequency (Hz) for the tone pitch. Use 0 Hz to create a silent pause.\n• Set a Duration (ms) for how long the tone or silence lasts.\n• The audio engine plays the slots sequentially. Empty slots (0 Hz and 0 ms) are automatically skipped.</string>
+    <string name="info_title_how_it_works">How it works</string>
+    <string name="info_text_how_it_works">1. Library: Create and test your custom Pips.\n2. Schedule: Set up the rules (days, hours, and minutes) for when your Pips should play.\n3. Master Switch: To save battery, the app remains completely asleep by default. You must turn the Master Switch ON (available on the Schedule screen).\n\nFor your convenience, you can also add \'The Pips\' Quick Settings Tile in your Android notification dropdown to easily toggle it ON and OFF.</string>
+
+    <!-- Preset names -->
+    <string name="preset_name_preset_1">GTS</string>
+    <string name="preset_name_preset_2">Soft pip</string>
+    <string name="preset_name_preset_3">Reverse</string>
+    <string name="preset_name_preset_4">Busy</string>
+    <string name="preset_name_preset_5">Double</string>
+    <string name="preset_name_preset_6">Warning</string>
+
+    <string name="master_switch_title">Master Switch</string>
+    <string name="master_switch_active">System is Active</string>
+    <string name="master_switch_inactive">System is Asleep</string>
+
+</resources>
